@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffaf; 
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 24px;
+}
+
+#app, .container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2, h3 {
+  font-family: "Jersey 10", sans-serif;
+  text-align: center;
+  color: #000;
+  margin: 12px 0;
+}
+
+p.intro {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.moods {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.mood-btn {
+  font-family: "Jersey 10", sans-serif;
+  font-size: 22px;
+  background: #000;               
+  color: #ffffaf;                 
+  padding: 14px 24px;
+  border: 4px solid #000;
+  border-radius: 6px;
+  cursor: pointer;
+
+  width: 90%;
+  max-width: 420px;
+
+  
+  box-shadow:
+    0 6px 0 #2b2b2b,
+    0 8px 0 #000;
+
+  transition: transform .12s, background .12s, color .12s;
+}
+
+.mood-btn:hover {
+  transform: translateY(-5px);
+  background: #222;               
+  color: #fffcd5;
+  letter-spacing: 1px;
+}
+
+.mood-btn:hover::after {
+  content: " ⭐";
+  font-size: 22px;
+}
+
+.resultado {
+  margin-top: 28px;
+  padding: 22px;
+  background: #fffce0;              
+  border-radius: 12px;
+  border: 4px solid #000;
+  max-width: 520px;
+  width: calc(100% - 48px);
+  box-shadow:
+    0 8px 0 #2d2d2d,
+    0 12px 0 #000;
+  image-rendering: pixelated;
+  text-align: margin-left;
+}
+
+#tituloMood {
+  font-family: "Jersey 10", sans-serif;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+#textoReceta li {
+  color: #222;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.volver {
+  display: inline-block;
+  margin-top: 18px;
+  text-decoration: none;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+
+  background: #ffffaf;             
+  color: #000;                     
+  padding: 10px 16px;
+  border: 4px solid #000;
+  border-radius: 8px;
+
+  box-shadow:
+    0 6px 0 #2d2d2d,
+    0 8px 0 #000;
+
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+.volver:hover {
+  transform: translateY(-3px);
+  background: #fff89c;             
+}
+
+.volver:hover::after {
+  content: " 🍳";
+  margin-left: 6px;
+}
+
+@media (max-width: 420px) {
+  .mood-btn {
+    font-size: 18px;
+  }
+
+  .resultado {
+    padding: 16px;
+    width: calc(100% - 32px);
+  }
+
+  #tituloMood {
+    font-size: 22px;
+  }
+}
+.resultado {
+  margin-top: 28px;
+  padding: 20px;
+  background: #ffffaf; 
+  border-radius: 12px;
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #000;
+  box-shadow:
+    0 8px 0 #2d2d2d,
+    0 12px 0 #000;
+  image-rendering: pixelated;
+  text-align: center; 
+  font-family: Helvetica, Arial, sans-serif;
+}
